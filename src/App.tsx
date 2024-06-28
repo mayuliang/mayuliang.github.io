@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter  as Router } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import Frame from './pages/Frame';
 import en_US from 'antd/es/locale/en_US';
