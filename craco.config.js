@@ -3,10 +3,7 @@ const path = require('path');
 module.exports = {
   webpack:{
     configure: (webpackConfig, { env, paths }) => {
-      // 设置项目的上下文目录
-      // 设置静态资源公共路径
-      webpackConfig.output.publicPath = '/docs/'
-      webpackConfig.output.path = path.resolve(__dirname, './docs')
+      webpackConfig.output.path = path.resolve(__dirname, './')
       return webpackConfig
     },
   },
