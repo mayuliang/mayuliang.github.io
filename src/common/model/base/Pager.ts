@@ -280,13 +280,13 @@ export default class Pager<T> extends HttpBase {
 
     let params: { [s: string]: string | number } = this.getParams();
 
-    if (this.history) {
-      window.history.replaceState(
-        {},
-        '',
-        window.location.pathname + '?' + ObjectUtil.param(params)
-      );
-    }
+    // if (this.history) {
+    //   window.history.replaceState(
+    //     {},
+    //     '',
+    //     window.location.pathname + '?' + ObjectUtil.param(params)
+    //   );
+    // }
 
     //准备去请求，所有错误置为空
     this.errorMessage = null;
