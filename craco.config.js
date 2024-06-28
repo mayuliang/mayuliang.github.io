@@ -1,6 +1,15 @@
 const CracoLessPlugin = require('craco-less');
-
+const path = require('path');
 module.exports = {
+  webpack:{
+    configure: (webpackConfig, { env, paths }) => {
+      // 设置项目的上下文目录
+      // 设置静态资源公共路径
+      webpackConfig.output.publicPath = '/pan/'
+      webpackConfig.output.path = path.resolve(__dirname, './pan')
+      return webpackConfig
+    },
+  },
   devServer: {
     port: 6015,
     // proxy for local development.
