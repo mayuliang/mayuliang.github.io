@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 import SafeUtil from './SafeUtil';
 
 axios.defaults.baseURL = 'https://pan.mayuliang.asia:23853'
-// axios.defaults.withCredentials = true
+axios.defaults.withCredentials = true
 //http请求全部收口在这个工具类中，可以快速切换http框架。
 export default class HttpUtil {
   static httpGet(
